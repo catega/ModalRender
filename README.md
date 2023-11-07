@@ -1,8 +1,8 @@
 # ModalRender
-React component using **ant design** `v4.21.5` Modal as a base
+React component using **ant design** `v4.21.5` Modal as a base.
 
 ## Basic Example
-This is the minimum you need to make it work
+This is the minimum you need to make it work.
 ```js
     <ModalRender 
         objModal: {
@@ -14,9 +14,9 @@ This is the minimum you need to make it work
 ```
 
 ## Modal with dependencies
-If you have to pass some states as a prop to the Modal and them will change inside, you have to add the states to the `dependencies` to see the changes
+If you have to pass some states as a prop to the Modal and them will change inside, you have to add the states to the `dependencies` to see the changes.
 
->Note that the dependencies prop is an object
+>Note that the dependencies prop is an object.
 ```js
     const [ person, setPerson ] = useState({
         name: '',
@@ -35,7 +35,9 @@ If you have to pass some states as a prop to the Modal and them will change insi
 ```
 
 ## Trigger without click
-You can trigger the Modal without clicking a component. To do this you have to set a useState and pass it to the `openModal` prop
+You can trigger the Modal without clicking a component. To do this you have to set a useState and pass it to the `openModal` prop.
+
+If you don't want a `trigger` component, set it as null.
 ```js
     const [ triggerModal, setTriggerModal ] = useState(false);
 
@@ -55,9 +57,9 @@ You can trigger the Modal without clicking a component. To do this you have to s
 ```
 
 ## Closing the Modal
-The `ModalRender` component passes a function named `closeModal` as a prop to the `content` component when it is created
+The `ModalRender` component passes a function named `closeModal` as a prop to the `content` component when it is created.
 
-To use it you just have to recieve it in the props and use it as a function
+To use it you just have to recieve it in the props and use it as a function.
 
 ```js
     const MyComponent = ({

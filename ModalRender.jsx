@@ -3,7 +3,7 @@ import { useState, useEffect, cloneElement, useMemo, useCallback } from 'react';
 import { extractFromObject } from './utils';
 
 /**
- * Adds a component 
+ * Adds a component that will open a Modal when clicked
  * @param {Object} objModal The minimum config is: {title: 'Modal Title', content: <Component that will render inside the modal />}
  * @param {string} type "info" | "success" | "error" | "warning" | "confirm"
  * @param {Object} dependencies Object with the useState that we want to check to update the modal. If we pass a state that will change to the Modal props, we have to add it to the dependencies
