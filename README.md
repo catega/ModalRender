@@ -5,11 +5,11 @@ React component using **ant design** `v4.21.5` Modal as a base.
 This is the minimum you need to make it work.
 ```js
     <ModalRender 
-        objModal: {
+        objModal= {{
             title: 'Example Modal',
             content: <MyComponent />
-        },
-        trigger: <Button text='Open Modal' />
+        }}
+        trigger={<Button text='Open Modal' />}
     />
 ```
 
@@ -25,11 +25,11 @@ If you have to pass some states as a prop to the Modal and them will change insi
     const [ numbers, setNumbers ] = useState([1, 2, 3, 4]);
 
     <ModalRender 
-        objModal: {
+        objModal={{
             title: 'Example Modal with dependencies',
             content: <MyComponent myPerson={person} numbers={numbers} />
-        },
-        trigger: <Button text='Open Modal' />,
+        }}
+        trigger={<Button text='Open Modal' />}
         dependencies={{person, numbers}}
     />
 ```
@@ -47,10 +47,10 @@ If you don't want a `trigger` component, set it as null.
     }
 
     <ModalRender 
-        objModal: {
+        objModal={{
             title: 'Example Modal without click',
             content: <MyComponent />
-        }
+        }}
         openModal={triggerModal}
         trigger={null}
     />
