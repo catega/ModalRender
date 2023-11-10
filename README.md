@@ -1,5 +1,5 @@
 # ModalRender
-React component using **ant design** `v4.21.5` Modal as a base.
+React component using [ant design Modal](https://ant.design/components/modal) as a base.
 
 ## Basic Example
 This is the minimum you need to make it work.
