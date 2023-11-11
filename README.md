@@ -14,7 +14,7 @@ This is the minimum you need to make it work.
 ```
 
 ## Modal with dependencies
-If you have to pass some states as a prop to the Modal and them will change inside, you have to add the states to the `dependencies` to see the changes.
+If you have to pass some states as a prop to the Modal for them to change inside, you have to add the states to the `dependencies` to see the changes.
 
 >Note that the dependencies prop is an object.
 ```js
@@ -35,7 +35,7 @@ If you have to pass some states as a prop to the Modal and them will change insi
 ```
 
 ## Trigger without click
-You can trigger the Modal without clicking a component. To do this you have to set a useState and pass it to the `openModal` prop.
+You can trigger the Modal without clicking any component. To do this you have to set a useState and pass it to the `openModal` prop.
 
 If you don't want a `trigger` component, set it as null.
 ```js
